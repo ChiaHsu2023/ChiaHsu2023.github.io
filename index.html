@@ -59,7 +59,7 @@
 							<header>
 								<h2 class="alt">Chia Hsu</h2>
 								<p>Hi! I am a PhD candidate fellow from <a href="https://www.dt.ntust.edu.tw/" target="_blank">Design Institute</a> at National Taiwan University of Science and Technology, and a researcher at the IUI Lab, luckily advised by <a href="https://scholar.google.com/citations?user=Unwg__kAAAAJ" target="_blank">Prof. Neng-Hao Yu</a>.  I also work as a product development researcher at <a href="https://www.surreal.com.tw/Home" target="_blank">Surreal Co., Ltd.</a></p>
-								<p>My research focuses on using MR and AI to enhancing language acquisition for EFL Children, with an emphasis on interaction design in MR environments.</p>
+								<p>My research focuses on using MR and AI to enhancing language acquisition for EFL Children, with an emphasis on interaction design in MR environments. I’m always excited to explore new ideas at the intersection of design, technology, and education. Feel free to reach out for potential collaborations, projects, or just to discuss ways we can bring creative innovation into educational design!</p>
 							</header>
 
 							<footer>
@@ -83,7 +83,6 @@
 					</section>
 					
 
-
 				<!-- publications -->
 					<section id="publications" class="two">
 						<div class="container">
@@ -97,24 +96,54 @@
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+										<a href="javascript:void(0)" onclick="openModal('modal1')" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 										<header>
+											<h3>UbiComp'24 Workshop / 6 October 2024</h3>
+											<body>
+											    <hr width="100%" size="2">
+											</body>
 											<h3>Exploring the Potential of Mixed Reality in Enhancing Language Acquisition for EFL Children</h3>
 										</header>
 									</article>
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+										<a href="javascript:void(0)" onclick="openModal('modal2')" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
 										<header>
+											<h3>CHI'23 Student Game Competition / 25 April 2023</h3>
+											<body>
+												<hr width="100%" size="2">
+											</body>
 											<h3>Spelland: Situated Language Learning with a Mixed-Reality Spelling Game through Everyday Objects</h3>
 										</header>
 									</article>
 								</div>
 							</div>
-
 						</div>
 					</section>
+
+				<!-- 浮動視窗結構 -->
+			
+				<!-- 第一個浮動視窗 -->
+					<div id="modal1" class="modal">
+					    <div class="modal-content">
+					        <span class="close" onclick="closeModal('modal1')">&times;</span>
+					        <h3>Exploring the Potential of Mixed Reality in Enhancing Language Acquisition for EFL Children</h3>
+					        <img src="images/teaser01.jpg" alt="" style="width: 100%; height: auto; max-width: 100%; margin-bottom: 10px;">
+					        <p>Mixed Reality (MR) technology has demonstrated its effectiveness in enhancing education, particularly in task-based training and the visualization of spatial concepts. This study examines the feasibility of using MR to assist EFL (English as a Foreign Language) children in learning English vocabulary and collocations. By analyzing different teaching methodologies, we identify two suitable strategies for MR-based instruction and develop two prototypes: Spelland and VerbVenture. Spelland uses situated learning to help children explore everyday objects and learn vocabulary through context, practicing pronunciation and spelling to earn letters for building new words and creating virtual objects. VerbVenture employs embodied learning to help children understand verb-noun collocations by interacting with virtual scenarios and performing actions, reinforcing word-object-action connections. We conduct a pilot study with EFL children to evaluate these prototypes, providing insights for further refinement and development of MR-based EFL learning applications.</p>
+					        <p><strong><a href="https://dl.acm.org/doi/10.1145/3675094.3678388" target="_blank">DOI</a></strong></p>
+					    </div>
+					</div>
+
+					<!-- 第二個浮動視窗 -->
+					<div id="modal2" class="modal">
+					    <div class="modal-content">
+					        <span class="close" onclick="closeModal('modal2')">&times;</span>
+					        <h3>Spelland: Situated Language Learning with a Mixed-Reality Spelling Game through Everyday Objects</h3>
+					        <p>This work explores the use of mixed-reality (MR) technology to enable situated language learning using everyday objects in the environment around the learners. The learning method is based on Presentation, Practice, and Production (PPP), which cultivates the habit of independent learning through repetition, practice, and demonstration. In our game design, the learners first interact with real-world objects via MR, and the objects’ spelling and their pronunciation will appear (Presentation), the learners repeat the pronunciation (Practice) to collect the letters of this objects, and finally the learner use the collected letters to spell out the target words (Production), which then transform into interactive 3D objects. We designed the learning experience and content tools using gestural UI, voice input, and object-to-word engine. Children in the preliminary user study found the game to be immersive, helpful in learning the spelling of the everyday objects and the target words, and additionally showed increased interests in learning about other nearby objects after playing the game.</p>
+					        <p><strong><a href="https://youtu.be/qf3U3X6gY8o?si=UE95sMLYxpwwWx-c" target="_blank">TEASER</a>&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://dl.acm.org/doi/10.1145/3544549.3583830" target="_blank">DOI</a></strong></p>
+					    </div>
+					</div>
 
 				<!-- Art -->
 					<section id="about" class="three">
@@ -151,6 +180,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/modal.js"></script>
 
 	</body>
 </html>
